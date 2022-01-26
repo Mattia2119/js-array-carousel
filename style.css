@@ -12,10 +12,42 @@
     display: flex;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
 .cover {
    height: 100%;
    width: 100%;
    object-fit: cover;
+}
+
+.arrow {
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background-color:rgba(156, 156, 156, 0.726);
+    cursor: pointer;
+}
+
+#top-arrow {
+    left: calc(50% - 15px);
+    top: 0;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#bottom-arrow {
+    left: calc(50% - 15px);
+    bottom: 0;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Containers*/
@@ -30,24 +62,19 @@
 .slider {
     height: 60vh;
     width: 80%;
-    border: 1px solid black;
 }
 
 .thumbnails {
     height: 100%;
     width: 15%;
-    border: 1px solid black;
-
 }
 
 .thumb-big-card {
     width: 85%;
     height: 100%;
-    border: 1px solid black;
 }
 
 .thumb-sm-card {
     height: calc(100% / 5);
-
-
 }
+
