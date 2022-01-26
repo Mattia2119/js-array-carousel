@@ -1,0 +1,53 @@
+/*Common rules*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Utilities*/
+
+
+.flex {
+    display: flex;
+}
+
+.cover {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+/*Containers*/
+
+.container-big {
+    background-color: rgb(185, 179, 179);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    height: 60vh;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.thumbnails {
+    height: 100%;
+    width: 15%;
+    border: 1px solid black;
+
+}
+
+.thumb-big-card {
+    width: 85%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.thumb-sm-card {
+    height: calc(100% / 5);
+
+
+}
