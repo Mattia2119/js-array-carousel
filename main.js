@@ -24,9 +24,8 @@ const text = [
 
 let slides = "";
 
-let i = "";
 
-for (i=0; i < items.length; i++); {
+for (let i=0; i < items.length; i++); {
     
     slides += `<div class="thumb-big-card active">
                    <img class="cover" src="${items[i]}">
