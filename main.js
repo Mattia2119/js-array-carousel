@@ -24,7 +24,7 @@ var text = [
 
 let slides = "";
 let titles = "";
-let subText ="";
+let subText = "";
 
 
 for (let i=0; i < items.length; i++) {
@@ -60,4 +60,35 @@ title[firstSlide].classList.add("active");
 var text = document.getElementsByClassName("text-box");
 text[firstSlide].classList.add("active");
 
+/*Aggiungo l'evento di click */
 
+let next = document.getElementById("bottom-arrow");
+next.addEventListener("click",
+function() {
+    if(firstSlide < items.length -1) {
+    items [firstSlide].classList.remove("active");
+    title [firstSlide].classList.remove("active");
+    text [firstSlide].classList.remove("active");
+    firstSlide++;
+    items [firstSlide].classList.add("active");
+    title [firstSlide].classList.add("active");
+    text [firstSlide].classList.add("active");}
+    
+}
+);
+
+
+let prev = document.getElementById("top-arrow");
+prev.addEventListener("click",
+function() {
+    if(firstSlide > 0) {
+    items [firstSlide].classList.remove("active");
+    title [firstSlide].classList.remove("active");
+    text [firstSlide].classList.remove("active");
+    firstSlide--;
+    items [firstSlide].classList.add("active");
+    title [firstSlide].classList.add("active");
+    text [firstSlide].classList.add("active");}
+
+}
+);
